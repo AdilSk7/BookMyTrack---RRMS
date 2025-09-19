@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyTrack - Fare</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fare.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">BookMyTrack</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="fare.html">Fare</a>
+      <a href="pnr.html">PNR</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="buttons">
+      <a href="login.html"><button>Login</button></a>
+      <a href="registration.html"><button>Sign up</button></a>
+    </div>
+  </nav>
+
+  <!-- Fare Calculator -->
+  <div class="fare-container">
+    <h1>Fare Calculator</h1>
+    <form>
+      <label>From Station:</label>
+      <input type="text" name="from" required>
+
+      <label>To Station:</label>
+      <input type="text" name="to" required>
+
+      <label>Class:</label>
+      <select name="class">
+        <option value="sleeper">Sleeper</option>
+        <option value="ac3">AC 3 Tier</option>
+        <option value="ac2">AC 2 Tier</option>
+        <option value="ac1">AC 1 Tier</option>
+      </select>
+
+      <button type="submit" onclick="alert('Estimated fare: ₹450'); return false;">Check Fare</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Railway Reservation Management System. All rights reserved.
+  </footer>
+</body>
+</html>

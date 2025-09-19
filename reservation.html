@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyTrack - Reservation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">BookMyTrack</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="fare.html">Fare</a>
+      <a href="pnr.html">PNR</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="buttons">
+      <a href="login.html"><button>Login</button></a>
+      <a href="registration.html"><button>Sign up</button></a>
+    </div>
+  </nav>
+
+  <!-- Reservation Form -->
+  <div class="reservation-container">
+    <h1>Book Your Ticket</h1>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Age:</label>
+      <input type="number" name="age" required>
+
+      <label>Gender:</label>
+      <select name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>From Station:</label>
+      <input type="text" name="from" required>
+
+      <label>To Station:</label>
+      <input type="text" name="to" required>
+
+      <label>Journey Date:</label>
+      <input type="date" name="date" required>
+
+      <label>Berth Preference:</label>
+      <select name="berth">
+        <option value="">No Preference</option>
+        <option value="lower">Lower</option>
+        <option value="middle">Middle</option>
+        <option value="upper">Upper</option>
+      </select>
+
+      <button type="submit" onclick="window.location.href='payment.html'; return false;">Proceed to Payment</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Railway Reservation Management System. All rights reserved.
+  </footer>
+</body>
+</html>

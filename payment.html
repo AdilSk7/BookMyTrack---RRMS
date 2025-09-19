@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyTrack - Payment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">BookMyTrack</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="fare.html">Fare</a>
+      <a href="pnr.html">PNR</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="buttons">
+      <a href="login.html"><button>Login</button></a>
+      <a href="registration.html"><button>Sign up</button></a>
+    </div>
+  </nav>
+
+  <!-- Payment Form -->
+  <div class="payment-container">
+    <h1>Payment</h1>
+    <form>
+      <label>Cardholder Name:</label>
+      <input type="text" name="cardname" placeholder="Enter cardholder name" required>
+
+      <label>Card Number:</label>
+      <input type="text" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+      <label>Expiry Date:</label>
+      <input type="month" name="expiry" required>
+
+      <label>CVV:</label>
+      <input type="password" name="cvv" placeholder="XXX" required>
+
+      <label>Or UPI ID:</label>
+      <input type="text" name="upi" placeholder="example@upi">
+
+      <button type="submit" onclick="window.location.href='pnr.html'; return false;">Pay Now</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Railway Reservation Management System. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyTrack - PNR Status</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pnr.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">BookMyTrack</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="fare.html">Fare</a>
+      <a href="pnr.html">PNR</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="buttons">
+      <a href="login.html"><button>Login</button></a>
+      <a href="registration.html"><button>Sign up</button></a>
+    </div>
+  </nav>
+
+  <!-- PNR Section -->
+  <div class="pnr-container">
+    <h1>PNR Status</h1>
+    <form>
+      <label>Enter PNR Number:</label>
+      <input type="text" name="pnr" placeholder="XXXXXXXXXX" required>
+      <button type="submit">Check Status</button>
+    </form>
+
+    <!-- PNR Result -->
+    <div class="pnr-result">
+      <h2>Booking Confirmed!</h2>
+      <p><strong>Passenger:</strong> John Doe</p>
+      <p><strong>Train:</strong> 12345 Express</p>
+      <p><strong>Seat/Berth:</strong> Lower - B12</p>
+      <button onclick="alert('Ticket Cancelled');">Cancel Ticket</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Railway Reservation Management System. All rights reserved.
+  </footer>
+</body>
+</html>
